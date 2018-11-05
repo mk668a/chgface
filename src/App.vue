@@ -1,19 +1,15 @@
 <template>
   <div id="app">
     <header>
+      <MainHeader></MainHeader>
     </header>
     <main>
       <!-- <img src="./assets/logo.png" alt="Vue.js PWA"> -->
       <router-view></router-view>
     </main>
+    <MainFooter></MainFooter>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'app'
-}
-</script>
 
 <style>
 body {
@@ -29,25 +25,18 @@ body {
 
 main {
   text-align: center;
-  margin-top: 40px;
 }
-
-/* header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
-
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
-} */
 </style>
+
+<script>
+import MainHeader from '@/components/MainHeader'
+import MainFooter from '@/components/MainFooter'
+
+export default {
+  name: 'app',
+  components: {
+    MainHeader,
+    MainFooter
+  }
+}
+</script>

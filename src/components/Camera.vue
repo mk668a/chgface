@@ -4,6 +4,18 @@
 </div>
 </template>
 
+<style>
+.Camera {
+  margin: 10px auto;
+}
+
+.Camera video {
+  border: 1px solid #c1c1c1;
+  border-radius: .5em;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+}
+</style>
+
 <script>
 import {
   Webcam

@@ -32,8 +32,8 @@ export default {
     init() {
       // create a new pusher object
       // PUSHER_APPKEY should be your pusher application key
-      this.pusher_obj = new Pusher('PUSHER_APPKEY', {
-        cluster: 'PUSHER_APPCLUSTER',
+      this.pusher_obj = new Pusher('565e65c20ee53e5948bd', {
+        cluster: 'ap1',
         encrypted: true
       });
       // subscribe to channel
